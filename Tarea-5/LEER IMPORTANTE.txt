@@ -1,0 +1,2 @@
+INGRESAR: localhost/Tarea-5.php 
+menu de inicio
