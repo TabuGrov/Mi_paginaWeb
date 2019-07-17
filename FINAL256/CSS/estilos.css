@@ -1,0 +1,112 @@
+body{
+	background: #ccc;
+	margin: 0 auto;
+}
+#contenedor{
+	width: 700px;
+	margin: auto;
+	margin-top: 60px;
+	border: 1px solid black;
+}
+#arriba{
+	width: 700px;
+	height: 180px;
+	background: #09AA4D;
+}
+#resultado{
+	clear: both;
+	width: 700px;
+	height: 50px;
+	border: 1px solid black;
+}
+#medio{
+	height: 90px;
+}
+#uno{
+	width: 150px;
+	height: 100px;
+	float: left;	
+}
+#img{
+	float: right;
+	width: 70px;
+	height: 70px;
+	padding-top: 15px;
+	position: relative;
+	right: 20px;
+}
+#dos{
+	width:550px;
+	height:px;
+	float: right; 
+}
+#izquierda{
+	width: 120px;
+	height: 300px;
+	border: 1px solid black;
+	float: left;
+	background: #494949;
+}
+#contenido{
+	width: 576px;
+	height: 300px;
+	border: 1px solid black;
+	float: left;
+	border-left: 1px solid white;
+	background: #fff;
+}
+
+ul.menu {
+clear: both;
+float: left;
+width: 90px;
+list-style: none;
+margin-left: 1px;
+padding: 0;
+margin-top: 20px;
+border-left:1px solid #7C7C7C;
+}
+ul.menu li a:link, ul.menu li a:visited {
+padding: .3em;
+display: block;
+text-decoration: none;
+color: #333;
+background: #F4F4F4;
+border-top:1px solid #7C7C7C;
+border-right:1px solid #7C7C7C;
+border-bottom:1px solid #9C9C9C;
+}
+ul.menu li a:hover{
+	background-color: #FC0;
+}
+.tit1{
+	font-size:22px; 
+	color: red;
+	text-align: left;
+}
+.tit2{
+	
+	font-size:20px; 
+	color: blue;
+	text-align: left;
+}
+#red{
+	color: red
+}
+#yellow{
+	color: yellow;
+}
+#green{
+	color: green;
+}
+.centrar{
+	font-size: 19px;
+	text-align: center;
+}
+table, tr, td{
+	border: 1px solid black;
+	margin-left: 10px;
+}
+h2{
+	margin-left: 4px;
+}

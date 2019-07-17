@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="CSS/styles.css">
+	<title>laboratorio 3</title>
+</head>
+	<script type="text/javascript">
+	var ope="suma";
+	
+	
+		function suma(){
+			var num = parseInt(document.getElementById("numero").value);
+			htm="<table  width='350px' height='350px'>";
+			for(var i=1; i<=10; i++)
+			{
+				var r=i+num;
+				htm+="<tr><td>"+num+"</td><td>+</td><td>"+i+"</td><td>=</td><td>"+ r +"</td></tr>";
+			}
+			htm+="</table>";
+			var suma=document.getElementById("resultado");
+				suma.innerHTML=htm;
+			document.getElementById("suma").style.background = 'orange';
+			document.getElementById("resta").style.background = '#F4F4F4';
+			document.getElementById("mult").style.background = '#F4F4F4'; 
+			document.getElementById("divi").style.background = '#F4F4F4';
+		}
+		function resta(){
+			var num = parseInt(document.getElementById("numero").value);
+			htm="<table  width='350px' height='350px'>";
+			for(var i=1; i<=10; i++)
+			{
+				var r=num-i;
+				htm+="<tr><td> "+num+" </td><td> - </td><td> "+i+" </td><td> = </td><td> "+ r +" </td></tr>";
+			}
+			htm+="</table>";
+			var suma=document.getElementById("resultado");
+				suma.innerHTML=htm;
+			document.getElementById("suma").style.background = '#f4f4f4';
+			document.getElementById("resta").style.background = 'orange';
+			document.getElementById("mult").style.background = '#F4F4F4'; 
+			document.getElementById("divi").style.background = '#F4F4F4';	
+		}
+		function multiplicacion(){
+			var num = parseInt(document.getElementById("numero").value);
+			htm="<table  width='350px' height='350px'>";
+			for(var i=1; i<=10; i++)
+			{
+				var r=i*num;
+				htm+="<tr><td> "+num+" </td><td> * </td><td> "+i+" </td><td> = </td><td> "+ r +" </td></tr>";
+			}
+			htm+="</table>";
+			var suma=document.getElementById("resultado");
+				suma.innerHTML=htm;
+			document.getElementById("suma").style.background = '#f4f4f4';
+			document.getElementById("resta").style.background = '#f4f4f4';
+			document.getElementById("mult").style.background = 'orange'; 
+			document.getElementById("divi").style.background = '#F4F4F4';	
+		}
+		function division(){
+			var num = parseInt(document.getElementById("numero").value);
+			htm="<table  width='350px' height='350px'>";
+			for(var i=1; i<=10; i++)
+			{
+				var r=num/i;
+				htm+="<tr><td> "+num+" </td><td> / </td><td> "+i+" </td><td> = </td><td> "+r+" </td></tr>";
+			}
+			htm+="</table>";
+			var suma=document.getElementById("resultado");
+				suma.innerHTML=htm;
+			document.getElementById("suma").style.background = '#f4f4f4';
+			document.getElementById("resta").style.background = '#f4f4f4';
+			document.getElementById("mult").style.background = '#F4F4F4'; 
+			document.getElementById("divi").style.background = 'orange';	
+		}
+	</script>
+<body>
+	<div id="center">
+		<label>Introduzca numero: </label>
+		<input type="text" name="numero" id="numero" onchange="operacion(this.value)"><br><br>
+	</div>
+	<div id="contenedor">
+			<ul class="menu">
+				<li><a href="#" onclick="suma()" id="suma">Suma</a></li>
+				<li><a href="#" onclick="resta()" id="resta">Resta</a></li>
+				<li><a href="#" onclick="multiplicacion()" id="mult">Multiplicacion</a></li>
+				<li><a href="#" onclick="division()" id="divi">Division</a></li>
+			</ul>
+	</div>
+	<!-- Resultado -->
+	<div id="resultado">
+		
+	</div>
+</body>
+</html>

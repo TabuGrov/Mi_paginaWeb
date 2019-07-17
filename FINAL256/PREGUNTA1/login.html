@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Examen Final</title>
+</head>
+<body>
+	<center>
+		<h1>"Examen Final-SIS-256</h1>
+		<h1>Nombre: Grover Taboada Rodas </h1>
+		<div class="contenedor">
+			<form action="autenticar.php" method="POST">
+				<label for="txtUser">Usuario</label><br>
+				<input type="text" name="txtUser" id="user"><br>
+				<label for="txtPassword">Contraseña</label><br>
+				<input type="password" name="txtPassword" id="pass"><br><br>
+				<input type="submit" value="Ingresar"><br><br>
+			</form>
+		</div>
+		<div>
+			<table>
+				<tr>
+					<td><input onclick="teclado(this.value)" type="button" value="1"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="2"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="3"></td>
+				</tr>
+				<tr>
+					<td><input onclick="teclado(this.value)" type="button" value="4"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="5"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="6"></td>
+				</tr>
+				<tr>
+					<td><input onclick="teclado(this.value)" type="button" value="7"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="8"></td>
+					<td><input onclick="teclado(this.value)" type="button" value="9"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><input onclick="teclado(this.value)" type="button" value="0"></td>
+				</tr>
+			</table>
+		</div>
+	</center>
+	<hr>
+<script>
+	function teclado(x){
+		var pass =document.getElementById("pass");
+		pass.value+=x;
+	}
+</script>
+</body>
+</html>
